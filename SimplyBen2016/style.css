@@ -1,0 +1,272 @@
+/*
+Theme Name: Simply Ben 2016
+Author: Benjamin Heap
+Author URI: http://www.simplyben.co.uk
+Description: Simple Theme by Simply Ben
+Version: 0.0.1
+License: GNU General Public License
+License URI: https://www.gnu.org/licenses/gpl.html
+Tags: Black, White, Simple
+*/
+@import url("fonts/font-awesome/css/font-awesome.min.css");
+@import url("css/bootstrap/css/bootstrap.min.css");
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  font-size: 100%;
+  font: inherit;
+  padding: 0;
+  border: 0;
+  margin: 0;
+  vertical-align: baseline; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+.clear {
+  clear: both; }
+
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important; }
+
+html {
+  font-family: simple-light, sans-serif; }
+
+@font-face {
+  font-family: tython;
+  src: url(fonts/Tython.ttf); }
+@font-face {
+  font-family: simple-light;
+  src: url(fonts/Simple-light.ttf); }
+@font-face {
+  font-family: simple-reg;
+  src: url(fonts/Simple-regular.ttf); }
+.simply-page {
+  padding: 25px;
+  text-align: center;
+  border: 3px solid black;
+  min-height: 100vh;
+  margin: 10px; }
+  @media screen and (max-width: 350px) {
+    .simply-page {
+      padding: 10px; } }
+  .simply-page a h1 {
+    display: block;
+    min-height: 50px;
+    margin: 20px;
+    font-size: 4em;
+    color: black;
+    font-family: simple-reg;
+    text-decoration: none;
+    padding: 10px; }
+  .simply-page a {
+    text-decoration: none; }
+  .simply-page .simply-panel {
+    max-width: 250px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer; }
+    .simply-page .simply-panel .simply-panel-image {
+      max-height: 300px;
+      position: relative; }
+      .simply-page .simply-panel .simply-panel-image img {
+        max-width: 100%;
+        object-fit: cover;
+        height: 100%;
+        min-height: 200px; }
+      .simply-page .simply-panel .simply-panel-image h2 {
+        font-family: simple-reg;
+        position: absolute;
+        padding: 50px 10px 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        font-size: 2.5em;
+        color: transparent;
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -o-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+        transition: all 1s ease;
+        background-color: transparent; }
+        .simply-page .simply-panel .simply-panel-image h2:hover {
+          color: white;
+          background-color: rgba(112, 112, 112, 0.75); }
+    .simply-page .simply-panel .simply-panel-text {
+      padding: 5px;
+      line-height: 1.2; }
+      .simply-page .simply-panel .simply-panel-text .date {
+        font-weight: bold;
+        margin: 10px 0; }
+      .simply-page .simply-panel .simply-panel-text a {
+        margin: 10px;
+        padding: 10px 20px;
+        border: 1px solid black;
+        border-radius: 3px;
+        display: block;
+        text-decoration: none;
+        background-color: black;
+        color: white; }
+        .simply-page .simply-panel .simply-panel-text a:hover {
+          background-color: white;
+          color: black; }
+
+.single-post {
+  max-width: 1200px;
+  margin: 25px auto;
+  border: 3px solid black;
+  padding: 25px; }
+  @media screen and (max-width: 350px) {
+    .single-post {
+      padding: 5px; } }
+  .single-post header {
+    display: block;
+    min-height: 50px;
+    margin: 20px 0;
+    font-size: 2em;
+    color: black;
+    font-family: simple-reg;
+    text-decoration: none;
+    padding: 10px;
+    text-align: center; }
+    .single-post header a {
+      text-decoration: none;
+      color: black;
+      cursor: pointer; }
+    @media screen and (max-width: 350px) {
+      .single-post header {
+        margin: 0px; } }
+    .single-post header h1 {
+      font-size: 2em;
+      margin: 20px 0;
+      vertical-align: middle; }
+      @media screen and (max-width: 350px) {
+        .single-post header h1 {
+          margin: 0px; } }
+  .single-post .post-image {
+    text-align: center; }
+    .single-post .post-image img {
+      max-width: 100%;
+      height: auto; }
+  .single-post .post-content {
+    max-width: 1200px;
+    padding: 20px;
+    padding-bottom: 80px;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    font-family: sans-serif; }
+    .single-post .post-content h2 {
+      font-size: 20px;
+      font-weight: bold;
+      margin: 10px 0;
+      text-align: left; }
+    .single-post .post-content h6 {
+      font-size: 12px;
+      text-align: left; }
+    .single-post .post-content p {
+      margin: 20px 0;
+      line-height: 1.5;
+      text-align: left; }
+      .single-post .post-content p strong {
+        font-weight: bold; }
+      .single-post .post-content p .italic {
+        font-style: italic; }
+    .single-post .post-content img {
+      max-width: 100%;
+      object-fit: cover; }
+  .single-post #comments {
+    text-align: center; }
+    .single-post #comments .comment-reply-title {
+      margin: 10px 0;
+      font-weight: bold; }
+    .single-post #comments .comment-form-comment {
+      margin: 20px 0; }
+    .single-post #comments textarea {
+      display: block;
+      margin: 10px auto;
+      max-width: 100%; }
+    .single-post #comments input {
+      margin: 5px 0; }
+
+.grid .grid-item {
+  width: 25%; }
+
+html h1 {
+  display: block;
+  min-height: 50px;
+  margin: 20px;
+  font-size: 4em;
+  color: black;
+  font-family: simple-reg;
+  text-decoration: none;
+  padding: 10px; }
+html h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0; }
+html p {
+  margin-bottom: 20px; }
+html em {
+  font-style: italic; }
+html strong {
+  font-weight: bold; }
+
+.simply-wp-page {
+  max-width: 1200px;
+  margin: 25px auto;
+  border: 3px solid black;
+  padding: 25px;
+  text-align: left; }
+  @media screen and (max-width: 350px) {
+    .simply-wp-page {
+      padding: 5px; } }
+  .simply-wp-page .entry-content {
+    max-width: 1200px;
+    padding: 10px;
+    padding-bottom: 80px;
+    width: 100%;
+    margin: 20px;
+    font-family: sans-serif; }
+
+header .simply-nav-btn {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  position: fixed;
+  right: 0px;
+  padding: 10px 20px;
+  min-width: 150px;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  z-index: 1000; }
+  header .simply-nav-btn:hover {
+    background-color: black; }
+header .one {
+  bottom: 30px; }
+header .two {
+  bottom: 70px; }
+
+/*# sourceMappingURL=style.css.map */

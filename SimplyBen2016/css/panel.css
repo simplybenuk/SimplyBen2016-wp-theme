@@ -1,0 +1,14 @@
+.page {
+  padding: 300px; }
+  .page .panel {
+    width: 300px;
+    border: 3px solid black;
+    text-align: center;
+    position: relative; }
+    .page .panel .panel-image img {
+      max-width: 100%; }
+    .page .panel .panel-image h2 {
+      position: absolute;
+      top: 50px; }
+
+/*# sourceMappingURL=panel.css.map */
